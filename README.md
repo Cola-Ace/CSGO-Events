@@ -1,4 +1,4 @@
-# CSGO-Events
+# serverevents
 - server_spawn
     - 说明：服务器启动时触发此事件
     - hostname <kbd>string</kbd> __服务器名称__
@@ -28,8 +28,15 @@
     - 说明：服务器中有玩家被封禁时触发此事件
     - name <kbd>string</kbd> __玩家名__
     - userid <kbd>short</kbd> __在服务器中的userid__
-    - networkid <kbd>string</kbd> __玩家网络__
+    - networkid <kbd>string</kbd> __玩家网络ID__
     - ip <kbd>string</kbd> __玩家IP__
     - duration <kbd>string</kbd> __封禁时间__
     - by <kbd>string</kbd> __封禁者__
     - kicked <kbd>bool</kbd> __玩家是否同时被踢出服务器__
+- player_info
+    - 说明：玩家名字更改时触发此事件
+    - name <kbd>string</kbd> __玩家名__
+    - index <kbd>byte</kbd> __玩家slot (实体index -1)__
+    - userid <kbd>short</kbd> __玩家在服务器上的userid__
+    - networkid <kbd>string</kbd> __玩家网络ID__
+    - bot <kbd>bool</kbd> __是否为bot__
