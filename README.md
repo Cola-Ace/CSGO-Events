@@ -40,3 +40,32 @@
     - userid <kbd>short</kbd> __玩家在服务器上的userid__
     - networkid <kbd>string</kbd> __玩家网络ID__
     - bot <kbd>bool</kbd> __是否为bot__
+- player_activate
+    - 说明：未知
+    - userid <kbd>short</kbd> __玩家在服务器上的userid__
+# gameevents
+- player_chat
+    - 说明：玩家发送信息时触发此事件
+    - teamonly <kbd>bool</kbd> __是否仅队友可见__
+    - userid <kbd>short</kbd> __玩家在服务器上的
+    - text <kbd>string</kbd> __输入内容__
+- player_score
+    - 说明：玩家分数改变时触发此事件
+    - userid <kbd>short</kbd> __玩家在服务器上的userid__
+    - kills <kbd>short</kbd> __击杀数__
+    - deaths <kbd>short</kbd> __死亡数__
+    - score <kbd>short</kbd> __总分数__
+- player_shoot
+    - 说明：玩家使用武器开枪时触发此事件
+    - userid <kbd>short</kbd> __玩家在服务器上的userid__
+    - weapon <kbd>byte</kbd> __武器ID__
+    - mode <kbd>byte</kbd> __武器模式__
+- player_use
+    - 说明：未知 <kbd>猜测：玩家触发使用动作时触发此事件</kbd>
+    - userid <kbd>short</kbd> __玩家在服务器上的userid__
+    - entity <kbd>short</kbd> __实体__
+- player_changename
+    - 说明：玩家更改名称时触发此事件
+    - userid <kbd>short</kbd> __玩家在服务器上的userid__
+    - oldname <kbd>string</kbd> __旧名称__
+    - newname <kbd>string</kbd> __新名称__
