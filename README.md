@@ -1,1 +1,13 @@
 # CSGO-Events
+- server_spawn
+    - 说明: 服务器启动时触发此事件
+    - hostname <kbd>string</kbd> __服务器名称__
+    - address <kbd>string</kbd> __主机名, IP 或者 DNS名称__
+    - port <kbd>short</kbd> __服务器端口__
+    - game <kbd>string</kbd> __游戏名__
+    - mapname <kbd>string</kbd> __地图名称__
+    - maxplayers <kbd>long</kbd> __最大玩家数__
+    - os <kbd>string</kbd> __服务器系统(WIN32, LINUX)__
+    - dedicated <kbd>bool</kbd> __是否为专用服务器__
+    - official <kbd>bool</kbd> __是否为Valve官方专用服务器__
+    - password <kbd>bool</kbd> __是否设置密码__
