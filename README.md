@@ -47,7 +47,7 @@
 - player_chat
     - 说明：玩家发送信息时触发此事件
     - teamonly <kbd>bool</kbd> __是否仅队友可见__
-    - userid <kbd>short</kbd> __玩家在服务器上的
+    - userid <kbd>short</kbd> __玩家在服务器上的userid__
     - text <kbd>string</kbd> __输入内容__
 - player_score
     - 说明：玩家分数改变时触发此事件
